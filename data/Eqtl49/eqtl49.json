@@ -1,0 +1,25 @@
+{
+    "dataset_name": "methyl96",
+    "description":
+        "Predict whether a snp is causal simultaneously in 49 tissues. A snp is postive in a tissue, only if its pip in that tissue exceeds a cutoff.",
+    "input_info": {
+        "format": "loci",
+        "genome": "hg38"
+    },
+    "file": {
+        "directory": "eqtl49",
+        "train": "train.txt",
+        "valid": "valid.txt",
+        "test": "test.txt"
+    },
+    "chromosomes": {
+        "train": null,
+        "valid": null,
+        "test": null
+    },
+    "construction_info":
+        "Move into /source and run download_gtex_v8_finemapping_dapg.sh and download_exons_gtf.sh, then run python3 by_tissue.py there; move back to the root folder and run main.py.",
+    "task_info": {
+        "task": "CausalSnpPrediction"
+    }
+}
