@@ -1,0 +1,24 @@
+{
+    "dataset_name": "prom_scan",
+    "description": 
+        "Predict whether a sequence contains a TSS (Transcription Start Site). Examples are generated from scanning the chromosomes.",
+    "input_info": {
+        "format": "loci",
+        "genome": "hg38"
+    },
+    "file": {
+        "directory": "prom_scan",
+        "train": "train.txt",
+        "valid": "valid.txt",
+        "test": "test.txt"
+    },
+    "chromosomes": {
+        "train": ["chr1"],
+        "valid": ["chr20"],
+        "test": ["chr13"]
+    },
+    "task_info": {
+        "task": "PromoterPrediction?"
+    },
+    "construction_info": "To build the dataset, run download_transcripts_gtf.sh first, then run main.py"
+}

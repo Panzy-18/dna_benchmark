@@ -19,7 +19,7 @@ In this frameowork, we support transformer and convolution based model. You can 
 | eqtl49        | Casual SNP         | 1+1000(flank)    | Probability, 49   | SNP number: 216330                              | AUROC       |
 | expression218 | Gene Expression    | 200+40800(flank) | log RPKM, 218     | Train: 21840, Valid: 987, Test: 990             | SpearmanR   |
 
-More detailed description is in `./data/$dataset/metadata.json`. Preprocessed pipeline in `./preprocess`. 
+More detailed description is in `./data/$dataset/metadata.json`. Preprocessed pipeline in `./preprocess`.
 
 ## Usage
 
@@ -123,6 +123,7 @@ python visualize.py --load-dir experiment/promoter --save-dir visual_result/prom
 Use `model.predict` method to infer for short sequence task (<1024bp) on your own data. For example:
 
 ```python
+
 # example for promoter detection.
 # run by 'python $file --load-dir experiment/promoter'
 from tools import get_config

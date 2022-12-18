@@ -1,0 +1,23 @@
+{
+    "dataset_name": "prom300",
+    "description": 
+        "Predict whether a sequence contains a TSS (Transcription Start Site). Length of a sequence is 300 bp. Positive examples span from TSS-250 (inclusive) to TSS+50 (exclusive). Negative examples are randomly selected from the human genome, with no overlapping with any positive examples. TSS information is downloaded from EPDnew (tss_edpnew.bed).",
+    "input_info": {
+        "format": "loci",
+        "genome": "hg38"
+    },
+    "file": {
+        "directory": "prom300",
+        "train": "train.txt",
+        "valid": "valid.txt",
+        "test": "test.txt"
+    },
+    "chromosomes": {
+        "train": null,
+        "valid": null,
+        "test": null
+    },
+    "task_info": {
+        "task": "PromoterPrediction?"
+    }
+}

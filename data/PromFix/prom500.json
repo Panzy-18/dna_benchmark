@@ -1,0 +1,23 @@
+{
+    "dataset_name": "prom500",
+    "description": 
+        "Predict whether a sequence contains a TSS (Transcription Start Site). Length of a sequence is 500 bp. Each promoter generates a positive example. Positive examples are random sequences that includes [TSS-250, TSS+50). Negative examples are randomly selected from the human genome, with no overlapping with any positive examples. TSS information is downloaded from EPDnew (tss_edpnew.bed).",
+    "input_info": {
+        "format": "loci",
+        "genome": "hg38"
+    },
+    "file": {
+        "directory": "prom500",
+        "train": "train.txt",
+        "valid": "valid.txt",
+        "test": "test.txt"
+    },
+    "chromosomes": {
+        "train": null,
+        "valid": null,
+        "test": null
+    },
+    "task_info": {
+        "task": "PromoterPrediction?"
+    }
+}
