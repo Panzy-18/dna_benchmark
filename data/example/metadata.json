@@ -1,0 +1,16 @@
+{
+    "dataset_name": "example",
+    "dataset_args": {
+        "dataset_class": "PromoterDataset",
+        "train_file": "promoter/train.json"
+    },
+    "model_args": {
+        "task": "ModelForSequenceTask",
+        "final_dim": 1,
+        "loss_fn": {
+            "name": "torch.nn.BCEWithLogitsLoss"
+        }
+    },
+    "metric": "aupr, auroc",
+    "extra": null
+}

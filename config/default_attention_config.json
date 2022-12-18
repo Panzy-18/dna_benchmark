@@ -1,0 +1,24 @@
+{
+    "model_name": "attention",
+    "model_size": "mini",
+    "abs_pos": false,
+    "rel_pos": false,
+    "rot_pos": true,
+    "num_layers": 4,
+    "model_dim": 512,
+    "dim_ff": 2048,
+    "dim_head": 64,
+    "num_heads": 8,
+    "pooling_method": "cls",
+    "activation": "gelu",
+    "vocab_size": 629,
+    "tokenization": "patch=4",
+    "max_input_bp_seq_len": 1024,
+    "max_attention_seq_len": 1025,
+    "conv_layers": [
+        ["Conv1d", 512, 512, 7, "same", 1, "gelu"]
+    ],
+    "dropout": 0.15,
+    "bias": false,
+    "half": false
+}

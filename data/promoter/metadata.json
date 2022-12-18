@@ -1,0 +1,21 @@
+{
+    "dataset_name": "promoter",
+    "description": "Detection promoter site given sequence.",
+    "dataset_args": {
+        "dataset_class": "PromoterDataset",
+        "ref_file": "genome/hg38.fa",
+        "train_file": "promoter/train.json",
+        "valid_file": "promoter/valid.json",
+        "test_file": "promoter/test.json",
+        "flank_length": 0
+    },
+    "model_args": {
+        "task": "ModelForSequenceTask",
+        "final_dim": 1,
+        "loss_fn": {
+            "name": "torch.nn.BCEWithLogitsLoss"
+        }
+    },
+    "metric": "aupr, auroc",
+    "extra": null
+}

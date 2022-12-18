@@ -1,0 +1,17 @@
+{
+    "dataset_name": "pretrain",
+    "description": "Semisupervised pretrain through ref genome of human.",
+    "dataset_args": {
+        "dataset_class": "PretrainDataset",
+        "ref_file": "genome/hs1.fa",
+        "train_file": "",
+        "max_length": 1024,
+        "mask_ratio": 0.3
+    },
+    "model_args": {
+        "task": "ModelForPretrain",
+        "train_cse": true
+    },
+    "metric": "aupr, auroc",
+    "extra": null
+}

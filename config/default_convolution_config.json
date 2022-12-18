@@ -1,0 +1,21 @@
+{
+    "model_name": "convolution",
+    "model_size": "mini",
+    "model_dim": 512,
+    "dim_ff": 2048,
+    "activation": "relu",
+    "vocab_size": 5,
+    "tokenization": "onehot",
+    "max_input_bp_seq_len": 1024,
+    "conv_layers": [
+        ["Conv1d", 4, 128, 25, "same", 1, "relu"],
+        ["MaxPooling1d", 5, 4],
+        ["Conv1d", 128, 256, 11, "same", 4, "relu"],
+        ["Conv1d", 256, 512, 7, "same", 4, "relu"],
+        ["Conv1d", 512, 1024, 5, "same", 4, "relu"]
+    ],
+    "flatten_dim": 4096,
+    "dropout": 0.3,
+    "bias": false,
+    "half": false
+}

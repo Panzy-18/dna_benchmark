@@ -1,0 +1,18 @@
+{
+    "model_name": "attention",
+    "model_size": "mini",
+    "abs_pos": false,
+    "rel_pos": true,
+    "rot_pos": true,
+    "num_layers": 4,
+    "model_dim": 512,
+    "dim_ff": 2048,
+    "dim_head": 64,
+    "num_heads": 8,
+    "pooling_method": "attention",
+    "activation": "gelu",
+    "max_attention_seq_len": 1025,
+    "dropout": 0.15,
+    "bias": false,
+    "half": false
+}
