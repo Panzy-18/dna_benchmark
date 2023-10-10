@@ -1,6 +1,6 @@
 ## Overview
 
-This repo contains 6 DNA task and scripts for quick experiment.
+This repo contains 6 DNA task and scripts for quick experiment. See full details in [manuscript.md]<./manuscript.md>
 
 **Note:** We strongly recommend that you browse the overall structure of our code at first. If you have any question, feel free to contact us.
 
@@ -72,7 +72,7 @@ We provide a easy-to-use customized data pipeline. If you want to start experime
 
 In metadata, you must specify fields like: (check more examples in `./data` folder)
 
-```json
+```
 {
     "dataset_name": ...,
     "dataset_args": {
@@ -95,7 +95,7 @@ In metadata, you must specify fields like: (check more examples in `./data` fold
 
 We support JSON or HDF5 format data file. In JSON, a sample is structured like:
 
-```json
+```
 {"sequence": "ATGGCTC", "label": [1, 0]} 
 or 
 {"index": ["chr1", 0, 7, "+"], "label": [1, 0]}
@@ -103,7 +103,7 @@ or
 
 In HDF5(for huge dataset storation), a sample is structured by two fields: `index` and `label`.
 
-```json
+```
 index: np.array([1, 0, 7, 1]) # (chr_num, start_pos, end_pos(exclusive), is_forward)
 label: np.array([1, 0])
 ```
