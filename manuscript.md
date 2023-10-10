@@ -30,8 +30,7 @@ The development of sequencing technology has greatly promoted research on the fu
 
 ## 3 Related Work
 
-TBD 这一部分会在我加ref的时候写
-
+TBD.
 
 
 ## 4 Datasets
