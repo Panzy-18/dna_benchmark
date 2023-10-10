@@ -10,14 +10,15 @@ In this frameowork, we support transformer and convolution based model. You can 
 
 ## Benchmark
 
-| Name          | Objective          | Input_length     | Output            | Dataset                                         | Main Metric |
-| ------------- | ------------------ | ---------------- | ----------------- | ----------------------------------------------- | ----------- |
-| promoter      | Promoter           | 500              | Probability, 1    | Train: 94159, Valid: 11770, Test: 11770         | AUROC       |
-| encode690     | TFBS               | 200+800(flank)   | Probability, 690  | Train: 4472062, Valid: 279494, Test: 454380    | AUPR        |
-| methyl96      | Methyl Probability | 1+1000(flank)    | Probability, 96   | Train: 1172067, Valid: 93046, Test: 181329   | SpearmanR   |
-| track7878     | TF/DNase/Histone   | 200+800(flank)   | Probability, 7878 | Train: 26880666, Valid: 280006, Test: 840022 | AUPR        |
-| eqtl49        | Casual SNP         | 1+1000(flank)    | Probability, 49   | SNP number: 216330                              | AUROC       |
-| expression218 | Gene Expression    | 200+40800(flank) | log RPKM, 218     | Train: 21840, Valid: 987, Test: 990             | SpearmanR   |
+| Name          | Objective          | Input_length     | Output            || Main Metric |
+| ------------- | ------------------ | ---------------- | ----------------- |  ----------- |
+| promoter      | Promoter           | 500              | Probability, 1    | AUROC        |
+| methyl96      | Methyl Probability | 1+500(flank)     | Probability, 96   | SpearmanR    |
+| track7878     | TF/DNase/Histone   | 200+800(flank)   | Probability, 7878 | AUPR         |
+| expression218 | Gene Expression    | 200+40800(flank) | log RPKM, 218     | SpearmanR    |
+| snp49         | Casual SNP         | 200+800(flank)   | Probability       | AUPR         |
+| mpra10        | SNP Effect         | 600              | log variant expression | SpearmanR         |
+
 
 More detailed description is in `./data/$dataset/metadata.json`. Preprocessed pipeline in `./preprocess`.
 
