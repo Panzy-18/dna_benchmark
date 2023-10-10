@@ -10,7 +10,7 @@ In this frameowork, we support transformer and convolution based model. You can 
 
 ## Benchmark
 
-| Name          | Objective          | Input_length     | Output            || Main Metric |
+| Name          | Objective          | Input_length     | Output            | Main Metric |
 | ------------- | ------------------ | ---------------- | ----------------- |  ----------- |
 | promoter      | Promoter           | 500              | Probability, 1    | AUROC        |
 | methyl96      | Methyl Probability | 1+500(flank)     | Probability, 96   | SpearmanR    |
