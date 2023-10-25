@@ -1,6 +1,6 @@
 ## Overview
 
-This repo contains 6 DNA task and scripts for quick experiment. See full details in [manuscript.md](./manuscript.md)
+This repo contains 6 DNA task and scripts for quick experiment. See full details in [manuscript](./manuscript.pdf)
 
 **Note:** We strongly recommend that you browse the overall structure of our code at first. If you have any question, feel free to contact us.
 
